@@ -1,0 +1,34 @@
+.presentation{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5.688rem;
+    margin-left: 5.375rem;
+
+    article{
+        color: white;
+        font-family: K2D;
+        
+        .partie{
+            width: fit-content;
+            color: #FFFFFF40;
+            margin-bottom: 0;
+            font-style: italic;
+        }
+
+        .titre{
+            font-size: 4rem;
+            margin-top: 0;
+            font-style: italic;
+        }
+
+        .texte{
+            margin-top: 0;
+            font-size: 1.5rem;
+            width: 481px;
+            height: 521px;
+        }
+    }
+}
+

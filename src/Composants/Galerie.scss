@@ -1,0 +1,22 @@
+.galerie-container{
+    display: flex;
+    margin-left: 5.375rem;
+
+    .titre-galerie{
+        color: white;
+        font-family: K2D;
+    
+        .partie2{
+            color: #FFFFFF40;
+            margin-bottom: 0;
+            font-style: italic;
+        }
+    
+        .titre-galerie{
+            font-size: 4rem;
+            margin-top: 0;
+            font-style: italic;
+        }
+    }
+}
+
