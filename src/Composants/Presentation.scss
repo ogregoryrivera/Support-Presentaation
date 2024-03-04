@@ -1,10 +1,8 @@
 .presentation{
     height: 90vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 5.688rem;
-    margin-left: 5.375rem;
+    
 
     article{
         color: white;
@@ -18,15 +16,15 @@
         }
 
         .titre{
-            font-size: 4rem;
+            font-size: 5rem;
             margin-top: 0;
             font-style: italic;
         }
 
         .texte{
             margin-top: 0;
-            font-size: 1.5rem;
-            width: 481px;
+            font-size: 2rem;
+            width: 40vw;
             height: 521px;
         }
     }

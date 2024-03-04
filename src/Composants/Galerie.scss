@@ -1,5 +1,9 @@
 .galerie-container{
     display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     margin-left: 5.375rem;
 
     .titre-galerie{
@@ -18,5 +22,41 @@
             font-style: italic;
         }
     }
+
+    .timeline{
+        height: 70vh;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        justify-content: flex-start;
+        
+    }
+
+    .evenement:nth-child(odd){
+        margin-left: 20rem;
+    }
+
+    .evenement{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: red;
+
+        .image-tl{
+            width: 20rem;
+        }
+
+        
+    }
+
+
+
+
 }
+
+
 

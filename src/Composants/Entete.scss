@@ -1,5 +1,13 @@
+.entete{
+    width: 100vw;
+    background-color: #f4dab5;
+    position: fixed;
+    z-index: 9999;
+}
+
 nav{
-    color: white;
+    color: #6f1d1b;
+    font-weight: 500;
 
     .entete-container{
         display: flex;
@@ -16,6 +24,7 @@ nav{
             margin-right: 2rem;
             font-family: Montserrat;
             font-size: 1.2rem;
+            gap: 3rem;
             
 
             .lien{

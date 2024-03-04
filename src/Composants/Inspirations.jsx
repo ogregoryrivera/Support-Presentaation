@@ -32,7 +32,7 @@ function Inspirations() {
   };
 
   return (
-    <div className="inspiration-container">
+    <div className="inspiration-container" id='inspiration'>
       <div className='titre-inspiration'>
         <p className='partie3'>Partie 3</p>
         <p className='titre-inspiration'>Inspirations</p>
