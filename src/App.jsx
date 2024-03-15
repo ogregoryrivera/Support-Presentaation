@@ -17,6 +17,8 @@ const getWindowDimensions = () => {
 
 function App() {
 
+  /*------------------ Code pour déterminer les dimensions de la page en temps réel ---------------------*/
+
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {
@@ -25,13 +27,14 @@ function App() {
     }
 
     window.addEventListener('resize', handleResize);
+    console.log(windowDimensions);
 
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, [windowDimensions]);
 
-  console.log(windowDimensions)
+  
 
   const canvasStyle = {
     width: "100vw",

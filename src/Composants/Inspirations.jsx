@@ -4,6 +4,8 @@ import './Inspiration.scss';
 
 function Inspirations() {
 
+  /*---------------------- Code pour ajouter des classes active ou inactive -------------*/
+
   const [ajouterClasse, setajouterClasse] = useState(false);
 
   const toggleInfo = () => {
@@ -43,6 +45,7 @@ function Inspirations() {
 
         <div className='carte'>
           <img src="/Images/bracelet.png" alt="" />
+          {/*------------- Si la valeur ajouterClasse est true on met la classe "actif", sinon on ne met pas de classe---------------*/}
           <div className={`bas-carte ${ajouterClasse ? 'actif' : ''}`}>
 
             <ArrowForwardIosIcon onClick={toggleInfo} className="fleche" />
@@ -59,6 +62,7 @@ function Inspirations() {
         
         <div className='carte'>
           <img src="/Images/bracelet3.png" alt="" />
+          {/*------------- Si la valeur ajouterClasse est true on met la classe "actif", sinon on ne met pas de classe---------------*/}
           <div className={`bas-carte ${ajouterClasse2 ? 'actif' : ''}`}>
 
             <ArrowForwardIosIcon onClick={toggleInfo2} className="fleche" />

@@ -5,6 +5,8 @@ import React, {useState} from 'react';
 
 function Entete() {
 
+  /*-------------------- Code pour le menu burger ----------------------*/
+
   const [burgerClass, setBurgerClass] = useState("burger-bar unclicked");
   const [menuClass, setMenuClass] = useState("menu hidden");
   const [menuClicke, setMenuClicke] = useState(false);
@@ -28,6 +30,7 @@ function Entete() {
         <nav className="entete">
           <div className="entete-container">
 
+            
             <img src="/Images/logo.png" alt="" className='logo'/>
 
             

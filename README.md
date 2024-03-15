@@ -6,7 +6,7 @@
 
 ## Emplacement du code pour voir en temps réel des dimensions de la page en temps réel
 -------------------------------------------------------------------
-- Fichier App.jsx ligne 20 à 40 dans /src/Composants/
+- Fichier App.jsx ligne 20 à 40 dans /src/
 -------------------------------------------------------------------
 - Utilisation de useEffect et addEventListener pour déterminer les dimensions de la page en temps réel
 
