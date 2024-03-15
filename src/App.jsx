@@ -21,6 +21,7 @@ function App() {
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
+  /*------------------ useEffect fera le code quand le statue de la valeur change (dans ce cas c'est les dimensions de la page) ------------*/
   useEffect(() => {
     const handleResize = () =>{
       setWindowDimensions(getWindowDimensions())

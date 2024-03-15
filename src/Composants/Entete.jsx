@@ -43,6 +43,7 @@ function Entete() {
               <div className={burgerClass}></div>
             </div>
 
+            
             <div className={menuClass}>
               <Link to='#presentation' smooth className='lien' onClick={updateMenu}>
                 Présentation

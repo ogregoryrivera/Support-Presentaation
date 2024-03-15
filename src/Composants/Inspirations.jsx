@@ -6,8 +6,10 @@ function Inspirations() {
 
   /*---------------------- Code pour ajouter des classes active ou inactive -------------*/
 
+  /*--------------- ajouterClasse est le statue de la valeur actuel et setAjouterClasse va update la ce statue en temps réel ---------*/
   const [ajouterClasse, setajouterClasse] = useState(false);
 
+  /*--------------- une fonction qui change le statue de la valeur ci-dessus de false à true ---------*/
   const toggleInfo = () => {
     setajouterClasse(!ajouterClasse);
   };
@@ -87,6 +89,7 @@ function Inspirations() {
 
         <div className='carte'>
           <img src="/Images/theme.png" alt="" />
+          {/*------------- Si la valeur ajouterClasse est true on met la classe "actif", sinon on ne met pas de classe---------------*/}
           <div className={`bas-carte ${ajouterClasse3 ? 'actif' : ''}`}>
 
             <ArrowForwardIosIcon onClick={toggleInfo3} className={`fleche ${ajouterClasse3 ? 'actif' : ''}`} />
@@ -103,6 +106,7 @@ function Inspirations() {
         
         <div className='carte'>
           <img src="/Images/theme2.png" alt="" />
+          {/*------------- Si la valeur ajouterClasse est true on met la classe "actif", sinon on ne met pas de classe---------------*/}
           <div className={`bas-carte ${ajouterClasse4 ? 'actif' : ''}`}>
 
             <ArrowForwardIosIcon onClick={toggleInfo4} className="fleche" />

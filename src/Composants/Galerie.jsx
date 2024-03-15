@@ -9,6 +9,8 @@ import { CSSTransition } from 'react-transition-group';
 
 function Galerie() {
 
+  /*--------------------- Code pour le carrousel ----------------------*/
+
   
   const [IndexCurrent, setIndexCurrent] = useState(0);
   
@@ -43,16 +45,17 @@ function Galerie() {
 
       <div className='slider'>
 
-        
+        {/*-------- Quand on clique on appelle la fonction slideAvant --------*/}
         <KeyboardArrowLeftIcon className='fleche' onClick={slideAvant}/>
 
 
           <div className="slide">
             <div className='descSlide'>Semaine {[IndexCurrent+2]}</div>
+            {/*-------- On cherche l'image par rapport à son index --------*/}
             <img src={`${process.env.PUBLIC_URL}/Images/${nomImages[IndexCurrent]}`} alt="" />
           </div>
 
-    
+        {/*-------- Quand on clique on appelle la fonction slideSuivant --------*/}
         <KeyboardArrowRightIcon className='fleche' onClick={slideSuivant}/>
 
       </div>
@@ -71,42 +74,6 @@ function Galerie() {
     </div>
 
     
-
-    {/*<div className="galerie-container" id='galerie'>
-        <div className='titre-galerie'>
-            <p className='partie2'>Partie 2</p>
-            <p className='titre-galerie'>Galerie</p>
-        </div>
-
-        <div className='timeline'>
-
-          <div className="evenement eve-droit">
-            <div className="date">Semaine 2</div>
-            <div className="description">Prototype des premiers produits</div>
-            <img src="/Images/semaine1.png" alt="" className='image-tl'/>
-          </div>
-
-          <div className="evenement eve-gauche">
-            <div className="date">Semaine 3</div>
-            <div className="description">Prototype des premiers produits</div>
-            <img src="/Images/semaine2.png" alt="" className='image-tl'/>
-          </div>
-
-          <div className="evenement eve-droit">
-            <div className="date">La date de le aujourd'hui</div>
-            <div className="description">Prototype des premiers produits</div>
-            <img src="/Images/semaine3.png" alt="" className='image-tl'/>
-          </div>
-
-          <div className="evenement eve-gauche">
-            <div className="date">La date de le aujourd'hui</div>
-            <div className="description">Prototype des premiers produits</div>
-            <img src="/Images/deux2.jpg" alt="" className='image-tl'/>
-          </div>
-          
-        </div>
-
-  </div>*/}
   </>
   )
 }
