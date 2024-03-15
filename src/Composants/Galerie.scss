@@ -1,62 +1,206 @@
-.galerie-container{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    margin-left: 5.375rem;
+//.galerie-container{
+//    display: flex;
+//    flex-direction: column;
+//    width: 100vw;
+//    height: 100vh;
+//    display: flex;
+//    margin-left: 5.375rem;
+//
+//    .titre-galerie{
+//        color: white;
+//        font-family: K2D;
+//    
+//        .partie2{
+//            color: #FFFFFF40;
+//            margin-bottom: 0;
+//            font-style: italic;
+//        }
+//    
+//        .titre-galerie{
+//            font-size: 4rem;
+//            margin-top: 0;
+//            font-style: italic;
+//        }
+//    }
+//
+//    .timeline{
+//        height: 70vh;
+//        overflow-y: scroll;
+//        display: flex;
+//        flex-direction: column;
+//        grid-gap: 20px;
+//        justify-content: flex-start;
+//        
+//    }
+//
+//    .evenement:nth-child(odd){
+//        margin-left: 20rem;
+//    }
+//
+//    .evenement{
+//        width: fit-content;
+//        height: fit-content;
+//        display: flex;
+//        flex-direction: column;
+//        padding: 10px;
+//        border-radius: 5px;
+//        background-color: red;
+//
+//        .image-tl{
+//            width: 20rem;
+//        }
+//
+//        
+//    }
+//
+//
+//
+//
+//}
 
-    .titre-galerie{
-        color: white;
-        font-family: K2D;
-    
-        .partie2{
-            color: #FFFFFF40;
-            margin-bottom: 0;
-            font-style: italic;
-        }
-    
-        .titre-galerie{
-            font-size: 4rem;
-            margin-top: 0;
-            font-style: italic;
-        }
-    }
+.titre-galerie{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  font-family: K2D;
+  margin-left: 1rem;
 
-    .timeline{
-        height: 70vh;
-        overflow-y: scroll;
-        display: flex;
-        flex-direction: column;
-        grid-gap: 20px;
-        justify-content: flex-start;
-        
-    }
+  .partie2{
+      color: #FFFFFF40;
+      margin-bottom: 0;
+      font-style: italic;
+      font-size: 1rem;
+  }
 
-    .evenement:nth-child(odd){
-        margin-left: 20rem;
-    }
-
-    .evenement{
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: red;
-
-        .image-tl{
-            width: 20rem;
-        }
-
-        
-    }
-
-
-
-
+  .titre-galerie{
+      font-size: 3rem;
+      margin-top: 0;
+      font-style: italic;
+      color: #e09f3e;
+  }
 }
 
+.galerie-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+
+  
+  
+}
+.slider{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .slide{
+    img{
+      width: 80vw;
+    }
+    .descSlide{
+      background-color: #e09f3e83;
+      color: white;
+      font-family: Montserrat;
+      font-weight: bolder;
+      font-size: 1.5rem;
+      padding: 0.3rem;
+    }
+  }
+  
+
+  .fleche{
+    font-size: 2.4rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.video{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-enter {
+    opacity: 0;
+  }
+  
+  .slide-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  .slide-exit {
+    opacity: 1;
+  }
+  
+  .slide-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+
+  
+  
+  @media screen and (min-width:1024px) {
+    .titre-galerie{
+    
+      .partie2{
+          
+          font-size: 1.3rem;
+      }
+
+      
+    }
+
+    .slider{
+      gap: 2rem;
+
+      .fleche{
+        font-size: 4rem;
+      }
+    }
+
+  }
+
+  @media screen and (min-width:1920px) {
+    .titre-galerie{
+    
+      .partie2{
+          
+          font-size: 1.3rem;
+      }
+
+      .titre-galerie{
+        font-size: 4rem;
+      }
+      
+    }
+
+    .galerie-container{
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      .slider{
+        gap: 1rem;
+        .slide{
+          
+          img{
+            width: 40vw;
+          }
+        }
+      }
+    }
+
+    .video{
+      width: 40vw;
+    }
+  }
+  
+  
+  
 
 

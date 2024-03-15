@@ -1,12 +1,13 @@
 .inspiration-container{
     display: flex;
     flex-direction: column;
-    margin-left: 5.375rem;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 
     .titre-inspiration{
-        color: white;
+        color: #e09f3e;
         font-family: K2D;
+        margin-left: 1rem;
     
         .partie3{
             color: #FFFFFF40;
@@ -15,7 +16,7 @@
         }
     
         .titre-inspiration{
-            font-size: 4rem;
+            font-size: 3rem;
             margin-top: 0;
             font-style: italic;
         }
@@ -24,7 +25,7 @@
     .galerie-base{
         max-width: 90vw;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 3rem;
 
         .galerie-base-titre{
@@ -120,7 +121,7 @@
         max-width: 90vw;
         margin-top: 2rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 3rem;
         .galerie-theme-titre{
             width: 10.68rem;
@@ -211,3 +212,52 @@
     }
 
 }
+
+@media screen and (min-width:1024px) {
+    .galerie-base{
+        flex-direction: row !important;
+
+        .galerie-base-titre{
+            min-width: 8rem !important;
+            font-size: 2.7rem !important;
+        }
+    }
+
+    .galerie-theme{
+        flex-direction: row !important;
+        
+
+        .galerie-theme-titre{
+            min-width: 8rem !important;
+            font-size: 2.7rem !important;
+        }
+    }
+
+    .bas-carte{
+        .desc{
+            font-size: 1rem !important;
+            width: 20rem;
+            padding-left: 0.8rem !important;
+        }
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .inspiration-container{
+        
+    
+        .titre-inspiration{
+        
+            .partie3{
+                font-size: 1.5rem;
+            }
+        
+            .titre-inspiration{
+                font-size: 4rem;
+                margin-top: 0;
+                font-style: italic;
+            }
+        }
+    }
+}
+

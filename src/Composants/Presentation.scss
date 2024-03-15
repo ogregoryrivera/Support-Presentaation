@@ -1,7 +1,8 @@
 .presentation{
-    height: 90vh;
     display: flex;
-    align-items: center;
+    //margin-left: 5.375rem;
+    margin-top: 5rem;
+    //margin-bottom: 5rem;
     
 
     article{
@@ -14,18 +15,83 @@
             margin-bottom: 0;
             font-style: italic;
         }
+        
 
         .titre{
-            font-size: 5rem;
-            margin-top: 0;
+            font-size: 3rem;
+            margin: 0;
+            margin-bottom: 0.5rem;
             font-style: italic;
+            color: #e09f3e;
         }
 
         .texte{
             margin-top: 0;
-            font-size: 2rem;
-            width: 40vw;
-            height: 521px;
+            font-size: 1rem;
+            width: 90vw;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .presentation{
+        article{
+            margin-left: 2rem;
+    
+            .partie{
+                font-size: 1.3rem;
+            }
+    
+            .texte{
+                width: 50vw;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    
+    
+}
+
+@media screen and (min-width:1920px) {
+    .presentation{
+        article{
+            margin-left: 2rem;
+            
+            .partie{
+                font-size: 1.5rem;
+            }
+            
+            .titre{
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+
+            .texte{
+                width: 50vw;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .presentation{
+        article{
+            margin-left: 2rem;
+            
+            .partie{
+                font-size: 1.5rem;
+            }
+            
+            .titre{
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+
+            .texte{
+                width: 50vw;
+                font-size: 2rem;
+            }
         }
     }
 }

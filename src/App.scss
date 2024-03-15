@@ -3,15 +3,16 @@
 body{
     //background-color: rgb(63, 21, 21);
     background-color: #6f1d1b;
+    overflow-x: hidden;
 
     .section-ring{
-        width: 100vw;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
         justify-content: center;
         justify-content: space-around;
         align-items: center;
 
+        
 
         .doigt{
             font-size: 6rem;
@@ -30,6 +31,7 @@ body{
     }
 }
 
+
 @keyframes anim-doigt {
     from{left: 65%;
     opacity: 1;}
@@ -41,3 +43,15 @@ body{
     
 }
 
+@media screen and (min-width:1024px) {
+    .section-ring{
+        flex-direction: row-reverse !important;
+        align-items: center !important;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .section-ring{
+    }
+    
+}

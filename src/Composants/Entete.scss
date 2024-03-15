@@ -1,5 +1,8 @@
 .entete{
     width: 100vw;
+    padding: 0;
+    margin: 0;
+    height: 3.5rem;
     background-color: #f4dab5;
     position: fixed;
     z-index: 9999;
@@ -12,26 +15,162 @@ nav{
     .entete-container{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items:center;
+        z-index: 9999;
 
         .logo{
+            width: 7rem;
             margin: 1rem;
         }
 
         .liens{
             display: flex;
-            flex-direction: row;
-            margin-right: 2rem;
+            flex-direction: column;
+            align-items: flex-end;
             font-family: Montserrat;
             font-size: 1.2rem;
-            gap: 3rem;
+            margin: 0;
+
+            .burger-menu{
+                width: 2rem;
+                height: 1.8rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                margin-right: 1rem;
+            }
+
+            .burger-bar{
+                width: 2rem;
+                height: 0.3rem;
+                border-radius: 0.2rem;
+                background-color: #ffffff;
+            }
+
+            .menu{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                background-color: #e09f3e;
+                position: absolute;
+                top:100%;
+                z-index: -10;
+
+                .lien{
+                    text-decoration: none;
+                    color: white;
+                    padding: 0.5rem;
+                }
+            }
+
+            /*-------------- État du menu -------------------*/
+
+            .hidden{
+                transform: translateX(100%);
+                transition: transform 0.2s;
+            }
+
+            .visible{
+                transform: translateX(0%);
+                transition: transform 0.2s;
+            }
+
+
+            /*-------------- Animation du menu -------------------*/    
+
+
+            .burger-bar.clicked:nth-child(1){
+                transform:translateY(0.68rem) rotate(45deg);
+                transition: ease-out 0.2s;
+            }
+
+            .burger-bar.clicked:nth-child(2){
+                transform: scale(0);
+                transition: ease-out 0.2s;
+            }
+
+            .burger-bar.clicked:nth-child(3){
+                transform:translateY(-0.85rem) rotate(-45deg);
+                transition: ease-out 0.2s;
+            }
+
+            .burger-bar.unclicked{
+                transform: translateY(0) rotate(0);
+                transition: ease 0.2s;
+            }
+
             
 
-            .lien{
-                list-style: none;
-                margin-left: 2rem;
-                cursor: pointer;
-            }
         }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    .entete{
+        height: fit-content;
+        align-items: center;
+
+        .entete-container{
+            display: flex;
+            justify-content: space-between;
+    
+            .liens{
+                .burger-menu{
+                    display: none;
+                }
+            
+                .menu{
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: row;
+                    background-color: transparent;
+                    font-size: 1.2rem;
+                    margin-right: 1rem;
+                    gap: 2rem;
+                    transform: translateX(0%);
+                    position: relative;
+                    z-index: 9999;
+                }
+            }   
+            
+            .logo{
+                min-width: 9rem;
+            }
+        
+            
+        }
+        
+    }
+
+    
+}
+
+@media screen and (min-width:1920px) {
+    .entete{
+        
+        margin-bottom: 2rem;
+        .entete-container{
+            
+    
+            .liens{
+                
+                padding: 1.6rem;
+                .menu{
+                    
+                    font-size: 1.5rem;
+                    
+                }
+            }   
+            
+            .logo{
+                min-width: 11rem;
+            }
+        
+            
+        }
+        
     }
 }
